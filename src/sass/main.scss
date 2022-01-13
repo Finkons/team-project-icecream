@@ -4,11 +4,12 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+// @import './example';
 @import './base/button';
 @import './base/container';
 @import './base/reset';
 @import './base/visually-hidden';
 
 @import './utils/variables';
+@import './components/reviews';
 @import './components/oksana_example';
