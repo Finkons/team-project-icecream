@@ -6,3 +6,29 @@
   border-radius: 50%;
   font-family: inherit;
 }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  border: none;
+  border-radius: 22px;
+
+  color: var(--accent-color);
+  background-color: var(--background-white);
+
+  transition-property: background-color;
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover);
+  }
+}
