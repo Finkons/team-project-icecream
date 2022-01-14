@@ -9,7 +9,14 @@
 @import './base/container';
 @import './base/reset';
 @import './base/visually-hidden';
-
 @import './utils/variables';
+
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
 @import './components/reviews';
-@import './components/oksana_example';
+@import './components/contacts';
+@import './components/footer';
