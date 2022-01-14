@@ -83,8 +83,58 @@ img {
   overflow: hidden;
 }
 
-.title {
-  background-color: aqua;
-  font-size: 20px;
+:root {
+  --primary-text-color: #ffffff;
+  --title-text-color: #D41443;
+  --secondary-title-color: #ffa5ba;
+  --default-text-color: #000000;
+  --secondary-text-color: #907e82;
+  --accent-color: #d41443;
+  --background-lightpink: #FFF5F6;
+  --background-white: #ffffff;
+  --background-header-pink: #FFB8CA;
+  --background-mobile: #E17992;
+  --hover-color: #C7133E;
+}
+
+.product-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.13333;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.review-card {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 440px;
+}
+
+@media screen and (min-width: 768px) {
+  .review-card {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .review-card {
+    width: 926px;
+    max-width: 926px;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */
