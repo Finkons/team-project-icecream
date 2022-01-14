@@ -4,15 +4,12 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-// @import './example';
 @import './base/button';
 @import './base/container';
 @import './base/reset';
 @import './base/visually-hidden';
 @import './utils/variables';
 
-@import './components/header';
-@import './components/hero';
 @import './components/products';
 @import './components/about';
 @import './components/advantages';
@@ -20,3 +17,5 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/footer';
+@import './components/hero-header';
+
