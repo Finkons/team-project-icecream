@@ -3,32 +3,6 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .button {
   cursor: pointer;
   margin: 0;
@@ -66,8 +40,8 @@
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -79,13 +53,13 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 700px;
+    width: 740px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1080px;
+    width: 1090px;
   }
 }
 
@@ -148,7 +122,7 @@ img {
   --background-header-pink: #ffb8ca;
   --background-mobile: #e17992;
   --hover-color: #c7133e;
-  --btn-hover: #ECEBEB;
+  --btn-hover: #ecebeb;
 }
 
 .btn, .header__btn, .header__link {
@@ -158,9 +132,130 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title {
-  background-color: aqua;
-  font-size: 20px;
+.product-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.13333;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper {
+    width: 926px;
+    max-width: 926px;
+    margin-bottom: 40px;
+  }
+}
+
+.reviews__text {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 440px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__text {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__text {
+    width: 926px;
+    max-width: 926px;
+    overflow: hidden;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.reviews__person {
+  margin-bottom: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 85px;
+  height: 85px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.swiper-pagination {
+  margin: 0 auto;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  border-radius: unset;
+  width: 20px;
+  height: 20px;
 }
 
 .header {
