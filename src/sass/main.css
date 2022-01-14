@@ -104,4 +104,9 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.title {
+  background-color: aqua;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
