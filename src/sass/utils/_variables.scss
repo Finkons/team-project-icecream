@@ -11,13 +11,12 @@
   --background-mobile: #e17992;
   --hover-color: #c7133e;
 
-  --btn-hover: #ECEBEB;
+  --btn-hover: #ecebeb;
 }
-
-$primary-font: DM Sans, sans-serif;
-$brand-font: Titan One, cursive;
-
 %animation {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+$primary-font: DM Sans, sans-serif;
+$brand-font: Titan One, cursive;

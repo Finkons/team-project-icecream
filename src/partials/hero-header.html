@@ -1,17 +1,17 @@
-<header class="header">
+<header class="header" id="header">
   <div class="header__container container">
     <nav class="header__nav">
       <a class="logo logo__link" href="/index.html">
         <picture>
-          <source srcset="images/logo-1x.png 1x, images/logo-2x.png 2x" />
-          <img class="logo__img" src="images/logo-1x.png" alt="IceCream" />
+          <source srcset="images/hero-header/logo-1x.png 1x, images/hero-header/logo-2x.png 2x" />
+          <img class="logo__img" src="images/hero-header/logo-1x.png" alt="IceCream" />
         </picture>
         <span class="logo__text">icecream</span>
       </a>
 
       <ul class="header__list">
         <li class="header__item">
-          <a class="header__link header__link--current" href="#">Home</a>
+          <a class="header__link header__link--current" href="#header">Home</a>
         </li>
 
         <li class="header__item">
@@ -41,7 +41,7 @@
         type="button"
       >
         <svg width="20px" height="12px">
-          <use href="images/svg/sprite.svg#burger"></use>
+          <use href="images/hero-header/svg/sprite.svg#burger"></use>
         </svg>
       </button>
       <!-- ============== -->
@@ -49,7 +49,7 @@
       <button class="header__btn" type="button">
         Buy now
         <svg width="6px" height="10px" class="header__btn-icon">
-          <use href="images/svg/sprite.svg#icon-arrow"></use>
+          <use href="images/hero-header/svg/sprite.svg#icon-arrow"></use>
         </svg>
       </button>
     </div>
@@ -73,21 +73,30 @@
 
     <picture>
       <source
-        srcset="images/Desktop/heroicecream1x.png 1x, images/Desktop/heroicecream2x.png 2x"
+        srcset="
+          images/hero-header/desktop/heroicecream1x.png 1x,
+          images/hero-header/desktop/heroicecream2x.png 2x
+        "
         media="(min-width: 1280px)"
       />
 
       <source
-        srcset="images/Tablet/heroicecream1x.png 1x, images/Tablet/heroicecream2x.png 2x"
+        srcset="
+          images/hero-header/tablet/heroicecream1x.png 1x,
+          images/hero-header/tablet/heroicecream2x.png 2x
+        "
         media="(min-width: 768px)"
       />
 
       <source
-        srcset="images/Mobile/heroicecream1x.png 1x, images/Mobile/heroicecream2x.png 2x"
+        srcset="
+          images/hero-header/mobile/heroicecream1x.png 1x,
+          images/hero-header/mobile/heroicecream2x.png 2x
+        "
         media="(min-width: 480px)"
       />
       <img
-        src="images/Mobile/heroicecream1x.png"
+        src="images/hero-header/mobile/heroicecream1x.png"
         class="hero-img animate__animated animate__jackInTheBox"
         alt="IceCream"
       />
@@ -95,17 +104,17 @@
 
     <picture>
       <source
-        srcset="images/desktop/girl1x.png 1x, images/Desktop/girl2x.png 2x"
+        srcset="images/hero-header/desktop/girl1x.png 1x, images/hero-header/desktop/girl2x.png 2x"
         media="(min-width: 1280px)"
       />
 
       <source
-        srcset="images/tablet/girl1x.png 1x, images/Tablet/girl2x.png 2x"
+        srcset="images/hero-header/tablet/girl1x.png 1x, images/hero-header/tablet/girl2x.png 2x"
         media="(min-width: 768px)"
       />
       <img
         class="hero-img--girl animate__animated animate__flipInY"
-        src="images/desktop/girl1x.png"
+        src="images/hero-header/desktop/girl1x.png"
         alt="Girl with ice cream"
       />
     </picture>
@@ -122,17 +131,20 @@
     <div class="hero__info">
       <picture>
         <source
-          srcset="images/Desktop/milk1x.png 1x, images/Desktop/milk2x.png 2x"
+          srcset="
+            images/hero-header/desktop/milk1x.png 1x,
+            images/hero-header/desktop/milk2x.png 2x
+          "
           media="(min-width: 1280px)"
         />
 
         <source
-          srcset="images/Tablet/milk1x.png 1x, images/Tablet/milk2x.png 2x"
+          srcset="images/hero-header/tablet/milk1x.png 1x, images/hero-header/tablet/milk2x.png 2x"
           media="(min-width: 768px)"
         />
         <img
           class="hero-img--milk animate__animated animate__bounceInLeft"
-          src="images/Desktop/milk1x.png"
+          src="images/hero-header/desktop/milk1x.png"
           alt="Bio Eco Milk"
         />
       </picture>
@@ -144,7 +156,7 @@
         </p>
         <button class="info-btn btn" type="button">
           <svg width="8px" height="8px" class="">
-            <use href="images/svg/sprite.svg#arrow-right"></use>
+            <use href="images/hero-header/svg/sprite.svg#arrow-right"></use>
           </svg>
         </button>
       </div>
