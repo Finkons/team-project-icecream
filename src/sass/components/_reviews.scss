@@ -1,0 +1,17 @@
+ .review-card{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 440px;
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    max-width: 926px;
+    overflow: hidden;
+  }
+ }
