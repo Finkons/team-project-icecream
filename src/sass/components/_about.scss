@@ -1,12 +1,26 @@
 .about {
   background-color: var(--background-lightpink);
-  // background-image: url('./../../images/about/milk-1x.png');
-}
-
-.about__container {
   padding-top: 125px;
   padding-bottom: 39px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    background-image: url('./images/about/milk-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('./images/about/milk-mob-2x.png');
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('./images/about/milk-1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('./images/about/milk-2x.png');
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 130px;
     padding-bottom: 66px;
   }
@@ -33,7 +47,7 @@
 }
 
 .about__title {
-  padding-bottom: 26px;
+  margin-bottom: 26px;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -70,7 +84,7 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 17px;
-    height: 505px;
+    height: 440px;
   }
   @media screen and (min-width: 1280px) {
     width: 516px;
@@ -83,20 +97,23 @@
   @media screen and (min-width: 768px) {
     width: 340px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 50px;
+  }
   @media screen and (min-width: 1280px) {
     width: 463px;
   }
 }
 
 .about__pre-text {
-  margin-bottom: 47px;
+  margin-bottom: 35px;
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   color: var(--default-text-color);
   @media screen and (min-width: 768px) {
-    margin-bottom: 49px;
+    margin-bottom: 35px;
     font-size: 14px;
     line-height: 1.76;
   }
@@ -143,6 +160,10 @@
   &:focus {
     background-color: #ecebeb;
   }
+}
+
+.about-btn__item {
+  margin-left: 12px;
 }
 
 .animate__bounceIn {
