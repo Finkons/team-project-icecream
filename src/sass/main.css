@@ -491,6 +491,12 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 37px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .header__container {
     -webkit-box-pack: end;
@@ -511,6 +517,7 @@ body {
 }
 
 .logo__link {
+  position: static;
   width: 199px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,13 +756,22 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 15px;
+    padding-bottom: 28px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .hero__container {
-    padding: 80px 15px 56px 15px;
+    padding-top: 80px;
+    padding-bottom: 56px;
   }
 }
 
 .ellipse {
+  position: absolute;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -764,6 +780,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .ellipse {
+    left: 291px;
+    top: 31px;
     width: 324px;
     height: 322px;
   }
@@ -771,7 +789,6 @@ body {
 
 @media screen and (min-width: 1280px) {
   .ellipse {
-    position: absolute;
     left: 385px;
     top: 52px;
     width: 538px;
@@ -884,20 +901,17 @@ body {
 
 .hero-img {
   position: absolute;
-  top: -97px;
-  left: 117px;
+  bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-img {
-    top: -32px;
-    left: 378px;
+    left: 362px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero-img {
-    top: 108px;
     left: 504px;
   }
 }

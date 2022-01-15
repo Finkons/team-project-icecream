@@ -13,6 +13,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+
   @media screen and (min-width: 1280px) {
     justify-content: flex-end;
     padding: 37px 15px 0px 15px;
@@ -26,6 +30,7 @@
 }
 
 .logo__link {
+  position: static;
   width: 199px;
   display: flex;
   align-items: center;
@@ -229,16 +234,19 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-    // padding-top: 15px;
-    // padding-bottom: 28px;
+    padding-top: 15px;
+    padding-bottom: 28px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 80px 15px 56px 15px;
+    padding-top: 80px;
+    padding-bottom: 56px;
   }
 }
 
 .ellipse {
+  position: absolute;
+
   width: 346px;
   height: 344px;
 
@@ -246,12 +254,14 @@
   background: var(--secondary-title-color);
 
   @media screen and (min-width: 768px) {
+    left: 291px;
+    top: 31px;
+
     width: 324px;
     height: 322px;
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
     left: 385px;
     top: 52px;
 
@@ -351,16 +361,16 @@
 
 .hero-img {
   position: absolute;
-  top: -97px;
-  left: 117px;
+  bottom: 0px;
+  // top: -97px;
+  // left: 117px;
 
   @media screen and (min-width: 768px) {
-    top: -32px;
-    left: 378px;
+    left: 362px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 108px;
+    // top: 108px;
     left: 504px;
   }
 }
