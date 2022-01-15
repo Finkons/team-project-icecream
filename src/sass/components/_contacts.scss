@@ -3,6 +3,9 @@
 }
 .address__list {
   margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .address__item {
   width: 220px;
@@ -21,15 +24,13 @@
   height: 16px;
   background: #f0d1a5;
   border-radius: 4px;
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding: auto 100px;
   margin-bottom: 25px;
+  padding: 0px 23px;
 }
 .address__city {
   font-weight: 500;
