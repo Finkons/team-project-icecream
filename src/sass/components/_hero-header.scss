@@ -12,13 +12,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 6px;
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
   }
 
   @media screen and (min-width: 1280px) {
-    justify-content: flex-end;
     padding: 37px 15px 0px 15px;
   }
 }
@@ -26,24 +26,25 @@
 .header__nav {
   display: flex;
   align-items: center;
-  margin-right: 110px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 65px;
+  }
 }
 
 .logo__link {
-  position: static;
-  width: 199px;
   display: flex;
   align-items: center;
+  gap: 20px;
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
-    left: -46px;
+    position: relative;
+    right: 65px;
   }
 }
 
 .logo__text {
   font-family: $brand-font;
-  margin-left: 20px;
   font-size: 25px;
   line-height: 0.96;
   text-transform: uppercase;
@@ -53,14 +54,11 @@
 .header__list {
   display: flex;
   align-items: center;
+  gap: 35px;
 
   @media screen and (max-width: 1279px) {
     display: none;
   }
-}
-
-.header__item:not(:last-child) {
-  margin-right: 35px;
 }
 
 .header__link {
@@ -228,6 +226,10 @@
   @media screen and (min-width: 768px) {
     overflow: visible;
   }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 160px;
+  }
 }
 
 .hero__container {
@@ -246,7 +248,8 @@
 
 .ellipse {
   position: absolute;
-
+  left: 36px;
+  top: -107px;
   width: 346px;
   height: 344px;
 
@@ -281,6 +284,8 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
+    bottom: 261px;
+    right: 30px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -296,6 +301,8 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
+    bottom: 205px;
+    right: 30px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -307,14 +314,15 @@
 .group-top__deco,
 .group-bottom__deco {
   position: absolute;
-
+  top: -10%;
+  right: -7px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: var(--background-white);
 
   @media screen and (min-width: 1280px) {
-    top: -8%;
+    top: -3%;
     right: -15px;
 
     width: 30px;
@@ -361,16 +369,16 @@
 
 .hero-img {
   position: absolute;
-  bottom: 0px;
-  // top: -97px;
-  // left: 117px;
+  bottom: -160px;
+  left: 117px;
 
   @media screen and (min-width: 768px) {
+    bottom: 0px;
     left: 362px;
   }
 
   @media screen and (min-width: 1280px) {
-    // top: 108px;
+    bottom: 0px;
     left: 504px;
   }
 }
@@ -386,7 +394,7 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: -28px;
+    bottom: 0px;
     right: 34px;
   }
 
@@ -401,9 +409,8 @@
 }
 
 .hero__title {
-  //   position: relative;
   width: 218px;
-  margin-top: 84px;
+  margin-top: 187px;
   margin-bottom: 19px;
 
   font-weight: 400;
@@ -420,10 +427,15 @@
     color: var(--accent-color);
   }
 
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
   @media screen and (min-width: 768px) {
     width: 162px;
     font-size: 22px;
     line-height: 1.14;
+    margin-top: 87px;
     margin-bottom: 20px;
 
     &--accent {
@@ -437,6 +449,7 @@
     font-size: 38px;
     line-height: 1.16;
     letter-spacing: 0.04em;
+    margin-top: 84px;
     margin-bottom: 25px;
 
     &--accent {
@@ -452,7 +465,7 @@
 
 .hero__btn {
   display: inline-block;
-  padding: 9px 15px;
+  padding: 7px 15px;
   border-radius: 22px;
 
   background-color: var(--accent-color);
@@ -513,6 +526,7 @@
 
 .hero__info {
   display: flex;
+  align-items: flex-end;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -521,7 +535,6 @@
 
 .hero__desc {
   @media screen and (min-width: 768px) {
-    margin-top: 48px;
     margin-bottom: 7px;
     width: 114px;
 
@@ -535,7 +548,6 @@
     width: 200px;
     font-size: 14px;
     line-height: 1.4;
-    margin-top: 0px;
     margin-left: 180px;
     margin-bottom: 20px;
   }
@@ -545,13 +557,25 @@
   @media screen and (min-width: 768px) {
     width: 18px;
     height: 18px;
-    margin-left: 180px;
     border-radius: 50%;
     fill: var(--accent-color);
+
+    &__icon {
+      width: 6px;
+      height: 6px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      &__icon {
+        width: 8px;
+        height: 8px;
+      }
+    }
   }
 
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
+    margin-left: 180px;
   }
 }
