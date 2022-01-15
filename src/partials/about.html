@@ -7,7 +7,7 @@
     <picture>
         <source srcset="./images/about/cow-1x.png 1x , ./images/about/cow-2x.png 2x" media="(min-width: 1280px )">
         <source srcset="./images/about/cow-tab-1x.png 1x , ./images/about/cow-tab-2x.png 2x" media="(min-width: 768px )">
-        <source srcset="./images/about/cow-mob-1x.png 1x , ./images/about/cow-mob-2x.png 2x" media="(min-width: 480px )">
+        <source srcset="./images/about/cow-mob-1x.png 1x , ./images/about/cow-mob-2x.png 2x" media="(min-width: 320px )">
         <img class="about__photo animate__animated animate__bounceIn" src="./images/about/cow-1x.png" alt="Cow with milk">
     </picture>
     </div>
@@ -20,8 +20,15 @@
     <br>
     <br>
 Aliquam erat volutpat. Aenean accumsan.</p>
-        <button type="button" class="about-btn">Read more</button>
+        <button type="button" class="about-btn">Read more
+            <span class="about-btn__item">
+            <svg class="about-btn__icon" width="8" height="9">
+                <use href="./images/about/about-arrow.svg#icon-about-arrow"></use>
+            </svg> </span>
+        </button>
         </div>
         </div>
     </div>
 </section>
+
+
