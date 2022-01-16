@@ -8,6 +8,7 @@
 }
 .reviews__text{
     display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     font-size:12px;
@@ -15,14 +16,14 @@
     line-height: 2.5833333333;
     background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
     letter-spacing: .04em;
-
+    z-index: 1;
   @media screen and (min-width: 768px) {
   font-size: 14px;
   line-height: 2.16;
   }
   @media screen and (min-width: 1280px) {
   font-size: 16px;
-  line-height: 1.86;
+  line-height: 1.9;
   }
 }
 .swiper-slide__text--block{
@@ -55,14 +56,14 @@
     font-size: 16px;
     line-height: 1.86;
     padding: 47px 89px 39px 87px;
-   margin-bottom: 30px;
+   margin-bottom: 35px;
   }
    
-&::after {
+&::before {
     content: '';
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 20px;
+    left: 20px;
     width: 54px;
     height: 40px;
     background-repeat: no-repeat;
@@ -71,7 +72,7 @@
     background-position: center;
     @media screen and (min-width: 768px) {
       top: 32px;
-      left: 32px;
+      left: 40px;
     }
     @media screen and (min-width: 1280px) {
       top: 25px;
@@ -97,12 +98,29 @@
   
 }
 .reviews__person{
+  position: relative;
   display: block;
   font-weight: 500;
   font-size: 20px;
   text-align: center;
   margin-bottom: 30px;
-  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 68px;
+    width: 32px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-image: url('/images/review/dots.svg');
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+      top: -16px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: -15px;
+    }
+}
 }
 .swiper-slide img {
     display: block;
