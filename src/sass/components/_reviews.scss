@@ -1,54 +1,88 @@
 
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
 .swiper {
-    display: block;
-    align-items: center;
-     @media screen and (min-width: 768px) {
-    max-width: 620px;
-     
-  }
-  @media screen and (min-width: 1280px) {
-    width: 926px;
-    max-width: 926px;
-    margin-bottom: 40px;
-  }
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
 
 }
 .reviews__text{
- text-align: center;
-    font-size: 18px;
-    background: #fff;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:12px;
+    font-weight: 500;
+    line-height: 2.5833333333;
+    background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
+    letter-spacing: .04em;
+
+  @media screen and (min-width: 768px) {
+  font-size: 14px;
+  line-height: 2.16;
+  }
+  @media screen and (min-width: 1280px) {
+  font-size: 16px;
+  line-height: 1.86;
+  }
+}
+.swiper-slide__text--block{
+  position: relative;
+  text-align: center;
+  background: #fafafa;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding: 40px 60px 26px 60px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
   max-width: 440px;
   @media screen and (min-width: 768px) {
     max-width: 620px;
-     
+    padding: 47px 80px 39px 80px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 2.16;
   }
   @media screen and (min-width: 1280px) {
-    width: 926px;
     max-width: 926px;
-    overflow: hidden;
-    overflow: hidden;
-    margin-bottom: 40px;
+    height: 138px;
+    font-size: 16px;
+    line-height: 1.86;
+    padding: 47px 89px 39px 87px;
+   margin-bottom: 30px;
   }
+   
+&::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 54px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-image: url('/images/review/quotes.svg');
+    background-size: contain;
+    background-position: center;
+    @media screen and (min-width: 768px) {
+      top: 32px;
+      left: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 25px;
+      left: 50px;
+    }
+}
 }
 .swiper-slide {
    display: flex;
    flex-direction: column;
-
+   margin-bottom: 30px;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -60,12 +94,15 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-   margin-top: 40px;
-   margin-bottom: 40px;
   
 }
 .reviews__person{
-    margin-bottom: 30px;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  
 }
 .swiper-slide img {
     display: block;
@@ -73,17 +110,24 @@ body {
     height: 85px;
     object-fit: cover;
 align-items: center;
-margin-bottom: 30px;
+margin-bottom: 15px;
+ @media screen and (min-width: 768px) {
+   margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 30px;
+  }
 }
 .swiper-pagination{
-    margin: 0 auto;
-    transform: translateX(15px);
+  display: block;
+   padding-top: 30px;
 }
 
 .swiper-pagination-bullet-active {
-    background-image: url(https://picsum.photos/200);
+    background-image: url(/images/review/home_icon.png);
+    --swiper-theme-color: none;
     background-size: cover;
     border-radius: unset;
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 12px;
 }
