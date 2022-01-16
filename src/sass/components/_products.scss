@@ -1,13 +1,10 @@
-// .product {
-
-// }
-// .section {
-// }
-// .product-block {
-// }
-// .container {
-// }
-.product-label {
+.product {
+    background-color:var(--background-white);
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.product__pre-title {
+    font-family: $brand-font;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -15,18 +12,115 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    color: var(--secondary-title-color);
 }
-// .product-title {
-// }
+.product__title {
+    margin-top: 15px;
+    font-family: $brand-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
 // .product-list {
+//     display: flex;
 // }
-// .item {
-// }
+.product__item {
+    padding: 161px 40px 40px;
+    margin-top: 130px;
+    border-radius: 24px;
+}
+.product__item--icecream {
+    background: #FFB8CA;
+    position: relative;
+}
+.product__item--icecream::before {
+    content: '';
+    position: absolute;
+    background-image: url(/images/products/ice-cream_mob_1x.png);
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: -25%;
+    transform: translatex(-50%);
+}
+.product__item--icecoffee {
+    background: #F0D1A5;
+    position: relative;
+}
+.product__item--icecoffee::before {
+    content: '';
+    position: absolute;
+    background-image: url(/images/products/ice-coffee_mob_1x.png);
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: -25%;
+    transform: translatex(-50%);
+}
+.product__item--milkshakes {
+    background: #C2E297;
+    position: relative;
+}
+.product__item--milkshakes::before {
+    content: '';
+    position: absolute;
+    background-image: url(/images/products/milkshake_mob_1x.png);
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: -25%;
+    transform: translatex(-50%);
+}
 // .product-list__description {
 // }
-// .product-list__title {
-// }
-// .product-list__text {
-// }
-// .product-list__btn {
-// }
+.product__name {
+    position: relative;
+    margin-bottom: 60px;
+    font-family: $brand-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.product__name::after{
+    content: '';
+    position: absolute;
+    background-image: url(/images/products/svg/3points.svg);
+    width: 26px;
+    height: 6px;
+    top: 50px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.product__text {
+    margin-bottom: 30px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.product__btn {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--background-white);
+}
+.product__icon {
+    fill: var(--accent-color);
+}
