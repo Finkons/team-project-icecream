@@ -180,7 +180,7 @@
 .franchise {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 161px;
   height: 44px;
   background: #ffffff;
@@ -199,4 +199,10 @@
   @media screen and (min-width: 1280px) {
     width: 198px;
   }
+}
+.buttons__icon {
+  height: 16px;
+  width: 10px;
+  fill: #fff;
+  margin-left: 14px;
 }
