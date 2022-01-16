@@ -1,0 +1,70 @@
+.gallery__-gradient {
+    background: linear-gradient( var(--background-lightpink) 0%, var(--background-lightpink) 30%, var(--background-white) 30%, var(--background-white) 100%);
+}
+
+.gallery__position {
+    height: 553px;
+    padding: 0;
+
+    position: relative;
+}
+
+.gallery__image {
+    position: absolute;
+
+    border-radius: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+.gallery__image-green {
+    top: 124px;
+    left: 10px;
+}
+
+.gallery__image-yellow {
+    left: 170px;
+    top: 80px;
+}
+
+.gallery__image-pink {
+    left: 170px;
+    top: 240px;
+}
+
+.gallery__image-ice-creams {
+    width: 280px;
+    height: 280px;
+
+    left: 329px;
+}
+
+.gallery__image-girl {
+    left: 329px;
+    top: 289px;
+}
+
+.gallery__image-berry {
+    left: 618px;
+    top: 91px;
+}
+
+.gallery__image-hand {
+    left: 618px;
+    top: 250px;
+}
+
+.gallery__image-dog {
+    right: 165px;
+    top: 48px;
+}
+
+.gallery__image-milkshake {
+    right: 165px;
+    top: 204px;
+}
+
+.gallery__image-cupcake {
+    right: 10px;
+    top: 124px;
+}
