@@ -1,36 +1,87 @@
 .address {
   background: linear-gradient(to bottom, #fff 6%, #fff5f6 6%);
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to bottom, #fff 16%, #fff5f6 16%);
+  }
+  @media screen and (min-width: 1280px) {
+    background: url('../images/contacts/contacts-bg.png'),
+      linear-gradient(to bottom, #fff 16%, #fff5f6 16%);
+    background-position: -20px;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url('../images/contacts/contacts-bg-2x.png'),
+        linear-gradient(to bottom, #fff 16%, #fff5f6 16%);
+    }
+  }
 }
 .address__list {
   margin-bottom: 54px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 86px;
+  }
 }
 .address__item {
   width: 220px;
-  height: 427px;
+
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 3 * 20px) / 3);
+  }
+  @media screen and (min-width: 1280px) {
+    // max-width: 330px;
+    padding: 51px 44px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .address__category {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   height: 16px;
   background: #f0d1a5;
   border-radius: 4px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-bottom: 25px;
-  padding: 0px 23px;
+  width: 80px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 186%;
+    height: 28px;
+    width: 73px;
+  }
+}
+.address__category--green {
+  background: #c2e297;
+  width: 130px;
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+  }
 }
 .address__city {
   font-weight: 500;
@@ -39,6 +90,11 @@
   letter-spacing: 0.04em;
   color: #000000;
   margin-bottom: 10px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
 }
 .address__description {
   font-weight: 500;
@@ -46,6 +102,11 @@
   line-height: 18px;
   color: #907e82;
   margin-bottom: 25px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+  }
 }
 .worktime {
   height: 145px;
@@ -53,6 +114,10 @@
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 25px;
+  @media screen and (min-width: 1280px) {
+    padding: 32px 0;
+    height: 195px;
+  }
 }
 .worktime__item:not(last-child) {
   margin-bottom: 10px;
@@ -62,12 +127,20 @@
   font-size: 12px;
   line-height: 186%;
   color: #000000;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 .worktime__time {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   color: #ffa5ba;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .contacts__link {
@@ -75,4 +148,55 @@
   font-size: 12px;
   line-height: 18px;
   color: #907e82;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+  }
+}
+
+.locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 161.45px;
+  height: 44px;
+  background: #d41342;
+  border-radius: 22px;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 191.45px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
+}
+.franchise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 161px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #d41443;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 191.45px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
 }
