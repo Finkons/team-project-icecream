@@ -73,7 +73,7 @@
 }
 
 .social-list__link {
-  color: #fea5bb;
+  color: var(--social-icon-color);
   @extend %animation;
   &:hover,
   &:focus {
@@ -82,7 +82,6 @@
 }
 
 .footer__tel {
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
@@ -104,7 +103,6 @@
 }
 
 .footer__info {
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -130,5 +128,5 @@
 }
 
 .line {
-  border: 1px solid #e1e1e1;
+  border: 1px solid var(--footer-line-color);
 }
