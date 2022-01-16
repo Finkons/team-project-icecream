@@ -3,7 +3,7 @@
     padding-top: 120px;
     padding-bottom: 100px;
 }
-.product-label {
+.product__pre-title {
     font-family: $brand-font;
     font-style: normal;
     font-weight: normal;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
     color: var(--secondary-title-color);
 }
-.product-title {
+.product__title {
     margin-top: 15px;
     font-family: $brand-font;
     font-style: normal;
@@ -29,16 +29,16 @@
 // .product-list {
 //     display: flex;
 // }
-.product-list__item {
+.product__item {
     padding: 161px 40px 40px;
     margin-top: 130px;
     border-radius: 24px;
 }
-.product-list__item--icecream {
+.product__item--icecream {
     background: #FFB8CA;
     position: relative;
 }
-.product-list__item--icecream::before {
+.product__item--icecream::before {
     content: '';
     position: absolute;
     background-image: url(/images/products/ice-cream_mob_1x.png);
@@ -48,11 +48,11 @@
     top: -25%;
     transform: translatex(-50%);
 }
-.product-list__item--icecoffee {
+.product__item--icecoffee {
     background: #F0D1A5;
     position: relative;
 }
-.product-list__item--icecoffee::before {
+.product__item--icecoffee::before {
     content: '';
     position: absolute;
     background-image: url(/images/products/ice-coffee_mob_1x.png);
@@ -62,11 +62,11 @@
     top: -25%;
     transform: translatex(-50%);
 }
-.product-list__item--milkshakes {
+.product__item--milkshakes {
     background: #C2E297;
     position: relative;
 }
-.product-list__item--milkshakes::before {
+.product__item--milkshakes::before {
     content: '';
     position: absolute;
     background-image: url(/images/products/milkshake_mob_1x.png);
@@ -78,7 +78,7 @@
 }
 // .product-list__description {
 // }
-.product-list__title {
+.product__name {
     position: relative;
     margin-bottom: 60px;
     font-family: $brand-font;
@@ -91,7 +91,7 @@
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
-.product-list__title::after{
+.product__name::after{
     content: '';
     position: absolute;
     background-image: url(/images/products/svg/3points.svg);
@@ -101,7 +101,7 @@
     left: 50%;
     transform: translatex(-50%);
 }
-.product-list__text {
+.product__text {
     margin-bottom: 30px;
     font-family: $primary-font;
     font-style: normal;
@@ -112,7 +112,7 @@
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
-.product-list__btn {
+.product__btn {
     display: block;
     margin: 0 auto;
     width: 40px;
@@ -121,6 +121,6 @@
     border-radius: 50%;
     background-color: var(--background-white);
 }
-.product-list__icon {
+.product__icon {
     fill: var(--accent-color);
 }
