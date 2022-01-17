@@ -102,7 +102,6 @@
 }
 
 .header__btn {
-  @extend .btn;
   min-width: 159px;
   min-height: 44px;
 
@@ -467,6 +466,7 @@
   display: inline-block;
   padding: 7px 15px;
   border-radius: 22px;
+  @extend %animation;
 
   background-color: var(--accent-color);
   color: var(--primary-text-color);
@@ -554,7 +554,7 @@
 }
 
 .info-btn {
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     width: 18px;
     height: 18px;
     border-radius: 50%;
