@@ -183,6 +183,11 @@
     justify-content: center;
   }
 }
+.buttons .button:not(:last-child) {
+  @media screen and (max-width:767px) {
+    margin-bottom: 10px;
+  }
+}
 .locations {
   @extend %animation;
   display: flex;
