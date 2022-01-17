@@ -14,9 +14,9 @@
     font-size:12px;
     font-weight: 500;
     line-height: 2.5833333333;
-    background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
-    letter-spacing: .04em;
-    z-index: 1;
+  background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
+  letter-spacing: .04em;
+  z-index: 1;
   @media screen and (min-width: 768px) {
   font-size: 14px;
   line-height: 2.16;
@@ -108,7 +108,8 @@
     content: '';
     position: absolute;
     top: -18px;
-    left: 68px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 32px;
     height: 4px;
     background-repeat: no-repeat;
