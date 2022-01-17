@@ -1,70 +1,200 @@
-.gallery__-gradient {
+.gallery__gradient {
     background: linear-gradient( var(--background-lightpink) 0%, var(--background-lightpink) 30%, var(--background-white) 30%, var(--background-white) 100%);
 }
 
 .gallery__position {
-    height: 553px;
-    padding: 0;
-
     position: relative;
+
+    padding: 0;
+    height: 202px;
+    width: 320px;
+
+    @media screen and (min-width: 768px){
+        height: 385px;
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px){
+        height: 553px;
+        width: 1087px;
+    }
 }
 
 .gallery__image {
     position: absolute;
 
-    border-radius: 40px;
-    width: 150px;
-    height: 150px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px){
+        width: 90px;
+        height: 90px;
+        border-radius: 20px;
+    }
+
+    @media screen and (min-width: 1280px){
+        width: 150px;
+        height: 150px;
+        border-radius: 40px;
+    }
 }
 
 .gallery__image-green {
-    top: 124px;
+    top: 50px;
     left: 10px;
+
+    @media screen and (min-width: 768px){
+        top: 94px;
+        left: 55px;
+    }
+
+    @media screen and (min-width: 1280px){
+        top: 124px;
+        left: 10px;
+    }
 }
 
 .gallery__image-yellow {
-    left: 170px;
-    top: 80px;
+    top: 35px;
+    left: 52px;
+
+    @media screen and (min-width: 768px){
+        top: 57px;
+        left: 150px;
+    }
+
+    @media screen and (min-width: 1280px){
+        left: 170px;
+        top: 80px;
+    }
 }
 
 .gallery__image-pink {
-    left: 170px;
-    top: 240px;
+    top: 78px;
+    left: 52px;
+
+    @media screen and (min-width: 768px){
+        top: 150px;
+        left: 150px;
+    }
+
+    @media screen and (min-width: 1280px){
+        left: 170px;
+        top: 240px;
+    }
 }
 
 .gallery__image-ice-creams {
-    width: 280px;
-    height: 280px;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
 
-    left: 329px;
+    top: 0;
+    left: 94px;
+    @media screen and (min-width: 768px){
+        width: 180px;
+        height: 180px;
+        border-radius: 25px;
+
+        left: 246px;
+    }
+
+    @media screen and (min-width: 1280px){
+        width: 280px;
+        height: 280px;
+        border-radius: 40px;
+
+        left: 329px;
+    }
 }
 
 .gallery__image-girl {
-    left: 329px;
-    top: 289px;
+    top: 93px;
+    left: 94px;
+
+    @media screen and (min-width: 768px){
+        top: 183px;
+        left: 246px;
+    }
+
+    @media screen and (min-width: 1280px){
+        left: 329px;
+        top: 289px;
+    }
 }
 
 .gallery__image-berry {
-    left: 618px;
-    top: 91px;
+    top: 35px;
+    right: 94px;
+
+    @media screen and (min-width: 768px){
+        top: 62px;
+        right: 247px;
+    }
+
+    @media screen and (min-width: 1280px){
+        left: 618px;
+        top: 91px;
+    }
 }
 
 .gallery__image-hand {
-    left: 618px;
-    top: 250px;
+    top: 78px;
+    right: 94px;
+
+    @media screen and (min-width: 768px){
+        top: 156px;
+        right: 247px;
+    }
+
+    @media screen and (min-width: 1280px){
+        left: 618px;
+        top: 250px;
+    }
 }
 
 .gallery__image-dog {
-    right: 165px;
-    top: 48px;
+    top: 23px;
+    right: 52px;
+
+    @media screen and (min-width: 768px){
+        top: 35px;
+        right: 151px;
+    }
+
+    @media screen and (min-width: 1280px){
+        right: 165px;
+        top: 48px;
+    }
 }
 
 .gallery__image-milkshake {
-    right: 165px;
-    top: 204px;
+    top: 66px;
+    right: 52px;
+
+    @media screen and (min-width: 768px){
+        top: 129px;
+        right: 151px;
+    }
+
+    @media screen and (min-width: 1280px){
+        right: 165px;
+        top: 204px;
+    }
 }
 
 .gallery__image-cupcake {
     right: 10px;
-    top: 124px;
+    top: 53px;
+
+    @media screen and (min-width: 768px){
+        top: 94px;
+        right: 55px;
+    }
+
+    @media screen and (min-width: 1280px){
+        right: 10px;
+        top: 124px;
+    }
 }
