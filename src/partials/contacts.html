@@ -75,19 +75,36 @@
             </li>
         </ul>
         <div class="buttons">
-            <button class="locations" type="button">
+            <button data-modal-open  class="locations" type="button">
                 Our Locations
-                <svg class="buttons__icon">
-                            <use href="./images/contacts/arrow.svg"></use>
-                        </svg>
+                <div class="arrow"></div>
+                <!-- <svg class="buttons__icon">
+                    <use href="./images/contacts/arrow.svg"></use>
+                </svg> -->
             </button>
             <button class="franchise" type="button">
                 Franchise
-                <svg class="buttons__icon">
-                            <use href="./images/contacts/arrow.svg"></use>
-                        </svg>
+                <div class="arrow arrow--pink"></div>
+                <!-- <svg class="buttons__icon">
+                    <use href="./images/contacts/icons.svg#arrow"></use>
+                </svg> -->
             </button>
         </div>
 
+
+
+        <div class="backdrop  is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal__close" data-modal-close>
+                    <svg class="modal__close-icon">
+                        <use href="./images/contacts/close-icon.svg"></use>
+                    </svg>
+                </button>
+               
+                </form>
+            </div>
+        </div>
     </div>
 </section>
+
+<script src="./js/contacts-modal.js"></script>
