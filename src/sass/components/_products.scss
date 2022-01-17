@@ -239,9 +239,9 @@
     height: 40px;
     border: none;
     border-radius: 50%;
-    cursor: pointer;
     background-color: var(--background-white);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
+    // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus{
         background-color: var(--btn-hover);
