@@ -16,7 +16,7 @@
     color: var(--secondary-title-color);
 }
 .product__title {
-    margin-bottom: 130px;
+    margin-bottom: 144px;
     font-family: $brand-font;
     font-style: normal;
     font-weight: normal;
@@ -45,11 +45,17 @@
       }
 }
 .product__item {
+    margin-bottom: 130px;
     max-width: 280px;
     padding: 161px 40px 40px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 24px;
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     @media screen and (min-width: 768px) {
         width: calc((100% - 3 * 20px) / 3);
         max-width: 220px;
