@@ -2,7 +2,7 @@
     background-color:var(--background-lightpink);
 }
 
-.advantages__container {
+.advantages--indent {
     padding-bottom: 97px;
 
     @media screen and (min-width:768px) {
@@ -41,7 +41,7 @@
         margin-right: 60px;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1280px) {
         margin-right: 30px;
     }
 }
