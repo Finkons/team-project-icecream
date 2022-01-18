@@ -2,16 +2,19 @@
   <div class="container hero__container">
     <div class="ellipse animate__bounceIn"></div>
 
-    <div class="group-top">
-      <span class="group-top__deco"></span>
-      <p class="group-top__number">16</p>
-      <p class="group-top__desc">cafes</p>
-    </div>
-    <div class="group-bottom">
-      <span class="group-bottom__deco"></span>
-      <p class="group-bottom__number">23</p>
-      <p class="group-bottom__desc">food trucks</p>
-    </div>
+    <ul class="info__list">
+      <li class="info__item">
+        <span class="info__deco"></span>
+        <p class="info__number">16</p>
+        <p class="info__desc">cafes</p>
+      </li>
+
+      <li class="info__item">
+        <span class="info__deco"></span>
+        <p class="info__number">23</p>
+        <p class="info__desc">food trucks</p>
+      </li>
+    </ul>
 
     <picture>
       <source
@@ -65,10 +68,15 @@
       ice cream made with <span class="hero__title--accent">passion</span>
     </h1>
 
-    <div class="hero__links">
-      <a class="hero__btn link" href="#products">Products</a>
-      <a class="hero__btn hero__btn--color link" href="#advantages">How it’s made?</a>
-    </div>
+    <ul class="hero__links">
+      <li class="hero__list-items">
+        <a class="hero__btn" href="#products">Products</a>
+      </li>
+
+      <li class="hero__list-items">
+        <a class="hero__btn hero__btn--color" href="#advantages">How it’s made?</a>
+      </li>
+    </ul>
 
     <div class="hero__info">
       <picture>
@@ -91,7 +99,7 @@
         />
       </picture>
 
-      <div>
+      <div class="hero__excerpt">
         <p class="hero__desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et

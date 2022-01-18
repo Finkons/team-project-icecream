@@ -22,20 +22,21 @@
 .header__nav {
   display: flex;
   align-items: center;
-
-  @media screen and (min-width: 1280px) {
-    margin-right: 65px;
-  }
 }
 
 .logo__link {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  @media screen and (max-width: 1279px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
+.logo__img {
   @media screen and (min-width: 1280px) {
-    position: relative;
-    right: 65px;
+    position: absolute;
+    top: 37px;
+    left: -46px;
   }
 }
 
@@ -50,11 +51,14 @@
 .header__list {
   display: flex;
   align-items: center;
-  gap: 35px;
 
   @media screen and (max-width: 1279px) {
     display: none;
   }
+}
+
+.header__item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .header__link {
@@ -98,6 +102,7 @@
 }
 
 .header__btn {
+  margin-left: auto;
   min-width: 159px;
   min-height: 44px;
 

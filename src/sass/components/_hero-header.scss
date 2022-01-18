@@ -1,5 +1,3 @@
-// ========================== Hero ==============================
-
 .hero {
   overflow: hidden;
   background-color: var(--background-header-pink);
@@ -58,44 +56,33 @@
   animation-delay: 500ms;
 }
 
-.group-top {
+.info__list {
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: 261px;
+    top: 94px;
     right: 30px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 141px;
+    top: 156px;
     right: 15px;
   }
 }
 
-.group-bottom {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    bottom: 205px;
-    right: 30px;
-  }
+.info__item:not(:last-child) {
+  margin-bottom: 13px;
 
   @media screen and (min-width: 1280px) {
-    top: 235px;
-    right: 15px;
+    margin-bottom: 15px;
   }
 }
 
-.group-top__deco,
-.group-bottom__deco {
+.info__deco {
   position: absolute;
-  top: -10%;
   right: -7px;
   width: 16px;
   height: 16px;
@@ -103,16 +90,13 @@
   background-color: var(--background-white);
 
   @media screen and (min-width: 1280px) {
-    top: -3%;
     right: -15px;
-
     width: 30px;
     height: 30px;
   }
 }
 
-.group-top__number,
-.group-bottom__number {
+.info__number {
   @media screen and (min-width: 768px) {
     position: relative;
     z-index: 1;
@@ -132,8 +116,7 @@
   }
 }
 
-.group-top__desc,
-.group-bottom__desc {
+.info__desc {
   @media screen and (min-width: 768px) {
     font-size: 8px;
     line-height: 1.25;
@@ -190,7 +173,7 @@
 }
 
 .hero__title {
-  width: 218px;
+  max-width: 218px;
   margin-top: 187px;
   margin-bottom: 19px;
 
@@ -213,7 +196,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 162px;
+    max-width: 162px;
     font-size: 22px;
     line-height: 1.14;
     margin-top: 87px;
@@ -226,7 +209,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 277px;
+    max-width: 277px;
     font-size: 38px;
     line-height: 1.16;
     letter-spacing: 0.04em;
@@ -242,10 +225,30 @@
 
 .hero__links {
   position: relative;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 112px;
+  }
+}
+
+.hero__list-items {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 19px;
+  }
 }
 
 .hero__btn {
-  display: inline-block;
   padding: 7px 15px;
   border-radius: 22px;
   @extend %animation;
@@ -273,20 +276,10 @@
 .hero__btn--color {
   background-color: var(--background-white);
   color: var(--accent-color);
-  margin-left: 8px;
 
   &:hover,
   &:focus {
     background-color: var(--btn-hover);
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 19px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 112px;
-    margin-left: 19px;
   }
 }
 
@@ -318,8 +311,7 @@
 .hero__desc {
   @media screen and (min-width: 768px) {
     margin-bottom: 7px;
-    width: 114px;
-
+    max-width: 114px;
     font-size: 8px;
     line-height: 1.5;
     color: var(--primary-text-color);
@@ -327,7 +319,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 200px;
+    max-width: 200px;
     font-size: 14px;
     line-height: 1.4;
     margin-left: 180px;
@@ -336,7 +328,7 @@
 }
 
 .info-btn {
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 18px;
     height: 18px;
     border-radius: 50%;
