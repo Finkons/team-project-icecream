@@ -32,3 +32,31 @@
     background-color: var(--btn-hover);
   }
 }
+
+.main-btn {
+  height: 44px;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: bold;
+  @extend %animation;
+}
+
+.main-btn--accent-color {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
+
+.main-btn--second-color {
+  background-color: var(--background-white);
+  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}

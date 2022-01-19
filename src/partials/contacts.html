@@ -1,5 +1,5 @@
 <section class="address address--indent" id="contacts">
-    <div class="container">
+    <div class="container address__container">
         <h1 class="visually-hidden">
             Contacts
         </h1>
@@ -74,22 +74,28 @@
                 </ul>
             </li>
         </ul>
-        <div class="buttons">
-            <button data-modal-open  class="locations button" type="button">
+        <ul class="buttons">
+            <li class="buttons__item buttons__item--indent">
+                <button data-modal-open type="button" class="main-btn main-btn--accent-color
+                buttons-locations button">
                 Our Locations
-                <span class="arrow"></span>
-                <!-- <svg class="buttons__icon">
-                    <use href="./images/contacts/arrow.svg"></use>
-                </svg> -->
-            </button>
-            <button class="franchise button" type="button">
+                    <span class="buttons__arrow buttons__arrow--indent">
+                    <svg class="buttons__icon" width="8" height="9">
+                        <use href="./images/about/about-arrow.svg#icon-about-arrow-2"></use>
+                    </svg></span>
+                </button>
+            </li>
+            <li class="buttons__item buttons__item--indent">
+                <button data-modal-open type="button" class="main-btn main-btn--second-color
+                buttons-franchise button">
                 Franchise
-                <span class="arrow arrow--pink"></span>
-                <!-- <svg class="buttons__icon">
-                    <use href="./images/contacts/icons.svg#arrow"></use>
-                </svg> -->
-            </button>
-        </div>
+                    <span class="buttons__arrow buttons__arrow--indent-2">
+                    <svg class="buttons__icon" width="8" height="9">
+                        <use href="./images/about/about-arrow.svg#icon-about-arrow"></use>
+                    </svg></span>
+                </button>
+            </li>
+        </ul>
 
 
 
