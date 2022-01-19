@@ -261,12 +261,18 @@
 
 .readmore-modal__milk-image {
   float: left;
-  // margin-left: auto;
-  // margin-right: auto;
+  &:hover {
+    transform: scale(1.15) !important;
+    transition: transform 800ms;
+  }
 }
 
 .readmore-modal__icecream-image {
   float: right;
+  &:hover {
+    transform: scale(1.15) !important;
+    transition: transform 800ms;
+  }
 }
 
 .readmore-modal__after-text {
