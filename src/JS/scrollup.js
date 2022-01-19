@@ -1,13 +1,13 @@
-// $().on('click','.back-to-top' ,function () {
-//     $('body,html').animate({ scrollTop: 0}, 800);
-// });
+$(window).click(function (scrollup) {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
 
-// $(window).on('scroll' ,function() {
-//     let scrolled = $(window).scrollTop();
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
 
-//     if(scrolled > 350) {
-//         $('.back-to-top').addClass('active');
-//     } else {
-//         $('.back-to-top').removeClass('active');
-//     }
-// });
+    if(scrolled > 350) {
+        $('.scrollup').addClass('active');
+    } else {
+        $('.scrollup').removeClass('active');
+    }
+});
