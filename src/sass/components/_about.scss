@@ -180,11 +180,13 @@
 }
 
 .readmore-modal {
-  width: 270px;
-  height: auto;
+  // width: 270px;
+  // height: auto;
+  width: 90vw;
+  height: 90vh;
   padding: 15px 10px;
   position: absolute;
-  // z-index: 520;
+  z-index: 520;
   overflow-y: auto;
   top: 50%;
   left: 50%;
@@ -196,11 +198,11 @@
   transform: translate(-50%, -50%);
   transition: transform 1000ms;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-    height: 90vh;
-    overflow-y: scroll;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   width: 450px;
+  //   height: 90vh;
+  //   overflow-y: scroll;
+  // }
   @media screen and (min-width: 768px) {
     width: 738px;
     padding: 30px 30px;
