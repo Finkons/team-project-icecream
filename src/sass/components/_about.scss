@@ -262,7 +262,7 @@
 .readmore-modal__milk-image {
   float: left;
   &:hover {
-    transform: scale(1.15) !important;
+    transform: scale(1.15);
     transition: transform 800ms;
   }
 }
@@ -270,7 +270,7 @@
 .readmore-modal__icecream-image {
   float: right;
   &:hover {
-    transform: scale(1.15) !important;
+    transform: scale(1.15);
     transition: transform 800ms;
   }
 }
