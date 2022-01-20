@@ -37,7 +37,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 550ms;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     min-width: 50vw;
   }
 }
