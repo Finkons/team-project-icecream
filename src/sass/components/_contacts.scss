@@ -288,7 +288,7 @@
   @media screen and (min-width: 768px) {
     min-height: calc(100% - 416px);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 528px;
     height: 581px;
   }
@@ -321,7 +321,7 @@
 .map {
   width: 100%;
   height: calc(100% - 67px);
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: calc(100% - 40px);
   }
 }
