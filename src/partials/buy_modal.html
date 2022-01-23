@@ -13,59 +13,62 @@
 
     <div class="order__header">Choose your destiny</div>
 
-    <!-- <form action="" class="modal-form" autocomplete="on">
-      <div class="modal-form__field">
-        <label class="modal-form__label" for="username">Имя</label>
+    <div class="order__wrapper">
+      <button class="order__btn btn" type="button">
+        <a href="#">
+          <svg class="order__icon" width="120px" height="15px">
+            <use href="images/hero-header/svg/sprite.svg#uber-eats"></use>
+          </svg>
+        </a>
+      </button>
+
+      <button class="order__btn btn" type="button">
+        <a class="order__link" href="#">Take Away</a>
+      </button>
+    </div>
+
+    <form action="" class="order-form" autocomplete="on">
+      <div class="order-form__field">
+        <label class="order-form__label" for="username">Name</label>
         <input
-          class="modal-form__input"
+          class="order-form__input"
           type="text"
           name="username"
           id="username"
           required="required"
         />
-        <svg class="modal-form__icon">
-          <use href=""></use>
-        </svg>
       </div>
 
-      <div class="modal-form__field">
-        <label class="modal-form__label" for="tel">Телефон</label>
-        <input class="modal-form__input" type="tel" name="tel" id="tel" required="required" />
-        <svg class="modal-form__icon">
-          <use href=""></use>
-        </svg>
+      <div class="order-form__field">
+        <label class="order-form__label" for="tel">Phone</label>
+        <input class="order-form__input" type="tel" name="tel" id="tel" required="required" />
       </div>
 
-      <div class="modal-form__field">
-        <label class="modal-form__label" for="mail">Почта</label>
-        <input class="modal-form__input" type="email" name="mail" id="mail" />
-        <svg class="modal-form__icon">
-          <use href=""></use>
-        </svg>
+      <div class="order-form__field">
+        <label class="order-form__label" for="mail">Mail</label>
+        <input class="order-form__input" type="email" name="mail" id="mail" />
       </div>
 
-      <div class="modal-form__field">
-        <label class="modal-form__label" for="comment">Комментарий</label>
+      <div class="order-form__field">
+        <label class="order-form__label" for="location">Choose your city</label>
+        <select class="order-form__select" id="location" name="location">
+          <option value="center">Chicago</option>
+          <option value="west">Los Angeles</option>
+          <option value="east" selected>New York</option>
+        </select>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="comment">Message</label>
         <textarea
-          class="modal-form__comment-input"
+          class="order-form__comment-input"
           name="comment"
           id="comment"
-          placeholder="Введите текст"
+          placeholder="Need something special?"
         ></textarea>
       </div>
 
-      <label class="modal-form__checkbox-label">
-        <input class="modal-form__checkbox visually-hidden" type="checkbox" name="privacy-policy" />
-        <span class="modal-form__checkbox-icon"></span>
-        <span class="modal-form__policy-text"
-          >Соглашаюсь с рассылкой и принимаю
-          <a class="modal-form__policy-link" href="">Условия договора</a></span
-        >
-      </label>
-
-      <div class="modal-form__btn">
-        <button class="btn" type="submit">Отправить</button>
-      </div>
-    </form> -->
+      <button class="order-form__btn btn" type="submit">Order</button>
+    </form>
   </div>
 </div>
