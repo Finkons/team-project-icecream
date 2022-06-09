@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Finkons.github.io/team-project-icecream",
+  "homepage": "https://Finkons.github.io/team-project-filmoteka",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-icecream/"
+    "build": "parcel build src/*.html --public-url /team-project-filmoteka/"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,13 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "gulp": "^4.0.2"
+    "axios": "^0.27.2",
+    "basiclightbox": "^5.0.4",
+    "firebase": "^9.8.2",
+    "gulp": "^4.0.2",
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "notiflix": "^3.2.5"
   }
 }
