@@ -1,0 +1,92 @@
+<header class="header" id="top">
+  <div class="header__container container">
+    <a class="logo logo__link" href="/index.html">
+      <svg class="logo__img" width="50px" height="50px">
+        <use href="images/hero-header/svg/sprite.svg#icon-logo"></use>
+      </svg>
+      <span class="logo__text">icecream</span>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link header__link--current" href="#top">Home</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="#about">About us</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="#advantages">How it’s made?</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="#products">Our products</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--------------------- Кнопка моб меню -------------------------->
+    <div class="btn--wrapper">
+      <button class="header__menu-open button" data-menu-open aria-expanded="false" type="button">
+        <svg width="20px" height="12px">
+          <use href="images/hero-header/svg/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <!-- ======================================================= -->
+
+      <button class="header__btn btn button" type="button" data-order-open-mob>
+        Buy now
+        <svg width="6px" height="10px" class="header__btn-icon">
+          <use href="images/hero-header/svg/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!--------------------- Мобільне меню -------------------------->
+
+  <div class="backdrop is-hidden" data-menu>
+    <div class="mobile-menu">
+      <button class="mobile-menu__close button" data-menu-close type="button">
+        <svg width="14px" height="14px" class="mobile-menu__icon-close">
+          <use href="images/hero-header/svg/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <button class="mobile-menu__btn btn button" type="button" data-order-open>
+        Buy now
+        <svg width="7px" height="10px" class="mobile-menu__btn-icon">
+          <use href="images/hero-header/svg/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#header">Home</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#about">About us</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#advantages">How it’s made?</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#products">Our products</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ======================================================= -->
+</header>

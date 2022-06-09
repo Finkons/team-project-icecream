@@ -1,0 +1,118 @@
+.advantages {
+    background-color:var(--background-lightpink);
+}
+
+.advantages--indent {
+    padding-bottom: 97px;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 140px;
+    }
+
+    @media screen and (min-width:1280px) {
+        padding-bottom: 139px;
+    }
+}
+
+.advantages__milk::before {
+    content:url(/images/advantages/milk.png);
+}
+
+.advantages__bucket::before {
+    content:url(/images/advantages/bucket.png);
+}
+
+.advantages__icecream::before {
+    content:url(/images/advantages/icecream.png);
+}
+
+.advantages__list {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+}
+
+.advantages__item--indent:not(:last-child) {
+    @media screen and (max-width:767px) {
+        margin-bottom: 38px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-right: 60px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-right: 30px;
+    }
+}
+
+.advantages__info {
+    width: 98px;
+    height: 56px;
+
+    font-family: $brand-font;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--title-text-color);
+
+    @media screen and (min-width:768px) {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    @media screen and (min-width:1280px) {
+        font-size: 58px;
+        line-height: 66px;
+    }
+}
+
+.advantages__info--indent {
+    margin-top: 16px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 36px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 40px;
+    }
+}
+
+.advantages__text {
+    width: 230px;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    color: var(--default-text-color);
+
+    @media screen and (min-width:768px) {
+        width: 180px;
+
+        font-size: 14px;
+        line-height: 174%;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 330px;
+
+        font-size: 16px;
+        line-height: 176%;
+    }
+}
+
+.advantages__text--indent {
+    @media screen and (min-width:768px) {
+        margin-top: 13px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 15px;
+    }
+}

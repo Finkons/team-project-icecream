@@ -1,0 +1,74 @@
+<div class="order-backdrop backdrop--hidden" data-order-data>
+  <div class="order-modal">
+    <button
+      class="order__btn-close readmore-modal__close"
+      data-order-close
+      type="button"
+      aria-label="Close"
+    >
+      <svg class="order__icon" width="14px" height="14px">
+        <use href="images/hero-header/svg/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="order__header">Choose your destiny</div>
+
+    <div class="order__wrapper">
+      <button class="order__btn btn" type="button">
+        <a href="#">
+          <svg class="order__icon" width="120px" height="15px">
+            <use href="images/hero-header/svg/sprite.svg#uber-eats"></use>
+          </svg>
+        </a>
+      </button>
+
+      <button class="order__btn btn" type="button">
+        <a class="order__link" href="#">Take Away</a>
+      </button>
+    </div>
+
+    <form action="" class="order-form" autocomplete="on">
+      <div class="order-form__field">
+        <label class="order-form__label" for="username">Name</label>
+        <input
+          class="order-form__input"
+          type="text"
+          name="username"
+          id="username"
+          required="required"
+        />
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="tel">Phone</label>
+        <input class="order-form__input" type="tel" name="tel" id="tel" required="required" />
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="mail">Mail</label>
+        <input class="order-form__input" type="email" name="mail" id="mail" />
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="location">Choose your city</label>
+        <select class="order-form__select" id="location" name="location">
+          <option value="center">Chicago</option>
+          <option value="west">Los Angeles</option>
+          <option value="east" selected>New York</option>
+        </select>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="comment">Message</label>
+        <textarea
+          class="order-form__comment-input"
+          name="comment"
+          id="comment"
+          placeholder="Need something special?"
+        ></textarea>
+      </div>
+
+      <button class="order-form__btn btn" type="submit">Order</button>
+    </form>
+  </div>
+</div>

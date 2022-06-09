@@ -1,0 +1,115 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="ellipse animate__bounceIn"></div>
+
+    <ul class="info__list">
+      <li class="info__item">
+        <span class="info__deco"></span>
+        <p class="info__number">16</p>
+        <p class="info__desc">cafes</p>
+      </li>
+
+      <li class="info__item">
+        <span class="info__deco"></span>
+        <p class="info__number">23</p>
+        <p class="info__desc">food trucks</p>
+      </li>
+    </ul>
+
+    <picture>
+      <source
+        srcset="
+          images/hero-header/desktop/heroicecream1x.png 1x,
+          images/hero-header/desktop/heroicecream2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+
+      <source
+        srcset="
+          images/hero-header/tablet/heroicecream1x.png 1x,
+          images/hero-header/tablet/heroicecream2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="
+          images/hero-header/mobile/heroicecream1x.png 1x,
+          images/hero-header/mobile/heroicecream2x.png 2x
+        "
+        media="(min-width: 480px)"
+      />
+      <img
+        src="images/hero-header/mobile/heroicecream1x.png"
+        class="hero-img animate__animated animate__jackInTheBox"
+        alt="IceCream"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="images/hero-header/desktop/girl1x.png 1x, images/hero-header/desktop/girl2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+
+      <source
+        srcset="images/hero-header/tablet/girl1x.png 1x, images/hero-header/tablet/girl2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="hero-img--girl animate__animated animate__flipInY"
+        src="images/hero-header/desktop/girl1x.png"
+        alt="Girl with ice cream"
+      />
+    </picture>
+
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__title--accent">passion</span>
+    </h1>
+
+    <ul class="hero__links">
+      <li class="hero__list-items">
+        <a class="hero__btn" href="#products">Products</a>
+      </li>
+
+      <li class="hero__list-items">
+        <a class="hero__btn hero__btn--color" href="#advantages">How it’s made?</a>
+      </li>
+    </ul>
+
+    <div class="hero__info">
+      <picture>
+        <source
+          srcset="
+            images/hero-header/desktop/milk1x.png 1x,
+            images/hero-header/desktop/milk2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="images/hero-header/tablet/milk1x.png 1x, images/hero-header/tablet/milk2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="hero-img--milk animate__animated animate__bounceInLeft"
+          src="images/hero-header/desktop/milk1x.png"
+          alt="Bio Eco Milk"
+        />
+      </picture>
+
+      <div class="hero__excerpt">
+        <p class="hero__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="info-btn btn button" type="button">
+          <svg class="info-btn__icon">
+            <use href="images/hero-header/svg/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
